@@ -1,5 +1,5 @@
 document.querySelector('form').addEventListener('submit', function(e) {
-  // Hide loader
+  // Show loader
   document.querySelector('#loading').style.display = 'block';
 
   //Hide results
@@ -50,7 +50,9 @@ function showError(x){
 }
 
 function clearError(){
+  //Hide loader
   document.querySelector('#loading').style.display = 'none';
+  // Remove error message
   document.querySelector('.alert').remove();
   
 }
